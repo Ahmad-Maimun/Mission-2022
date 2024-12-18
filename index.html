@@ -1,116 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yeseva+One&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
     <title>Mission 2022</title>
-    <link rel="shortcut icon" href="./assets/images/person/person-2.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/person/person-2.png"
+      type="image/x-icon"
+    />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              },
-              fontFamily: {
-                manrope: ["Manrope", "sans-serif"],
-                lobster: ["Lobster", "sans-serif"],
-                poppins: ["Poppins", "sans-serif"],
-                yeseva: ["Yeseva One", "serif"],
-                roboto: ["Roboto", "sans-serif"]
-              }
-            }
-          }
-        }
-      </script>
-</head>
-<body class="overflow-x-hidden">
-  <!-- Hero Section Start -->
-    <div class="container mx-auto w-11/12 smgrid-cols-1 grid lg:grid-cols-2">
-      <div class="mt-[60px] lg:mt-[140px]">
-        <h1 class="border-l-[4px] border-[#FF5959] ps-[13px] mb-[15px] text-[34px] max-w-[330px] lg:max-w-[503px] leading-[48px] lg:text-[60px] lg:leading-[80px] lg:w-[503px]">
-          <span class="font-yeseva font-normal text-[#333333]">Stay Focused on </span>
-          <span class="font-yeseva font-normal text-[#FFAD5A]">Mission 2022</span>
-        </h1>
-        <p class="max-w-[400px] font-poppins font-normal text-[18px] leading-[28px] text-[#3E3E3E] mb-[19px]">Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam falli deterruisset. No duo populo animal noluisse, enim</p>
-        <button class="w-[172px] h-[48px] bg-[#FF5959] text-[#fff] font-poppins font-medium text-[16px] rounded-[5px] block mb-[33px]">Explore Now</button>
-        <span class="font-poppins font-normal text-[15px] lg:text-[16px] text-[#434343]">Scroll down to explore more about us</span>
-      </div>
-      <div>
-        <img class="w-[426px] mx-auto" src="./assets/images/person/person-2.png" alt="">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+              lobster: ["Lobster", "sans-serif"],
+              poppins: ["Poppins", "sans-serif"],
+              yeseva: ["Yeseva One", "serif"],
+              roboto: ["Roboto", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Hero Section Start -->
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+        <div class="mt-[140px] md:mt-0">
+          <h1 class="border-l-[4px] border-[#FF5959] pl-[13px] mb-[15px]">
+            <span
+              class="font-yeseva text-[48px] md:text-[60px] font-normal leading-[70px] text-[#333333]"
+            >
+              Stay Focused on
+            </span>
+            <span
+              class="font-yeseva text-[48px] md:text-[60px] font-normal leading-[70px] text-[#FFAD5A]"
+            >
+              Mission 2022
+            </span>
+          </h1>
+          <p
+            class="max-w-[400px] font-poppins font-normal text-[16px] md:text-[18px] leading-[24px] md:leading-[28px] text-[#3E3E3E] mb-[19px]"
+          >
+            Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam
+            falli deterruisset. No duo populo animal noluisse, enim
+          </p>
+          <button
+            class="w-[172px] h-[48px] bg-[#FF5959] text-[#fff] font-poppins font-medium text-[16px] rounded-[5px] block mb-[33px]"
+          >
+            Explore Now
+          </button>
+          <span
+            class="font-poppins font-normal text-[14px] md:text-[16px] text-[#434343]"
+          >
+            Scroll down to explore more about us
+          </span>
+        </div>
+        <div class="flex justify-center md:justify-end">
+          <img
+            class="w-[100%] md:w-[426px]"
+            src="./assets/images/person/person-2.png"
+            alt=""
+          />
+        </div>
       </div>
     </div>
     <!-- Hero Section End -->
-    <!-- My Mission In 2022 Start -->
-    <div class="container mx-auto w-11/12 relative">
-      <div class="heading mt-[82px] mb-[48px]">
-        <h2 class="font-poppins font-bold text-[30px] lg:text-[48px] leading-[40px] lg:leading-[70px] text-center text-[#13103A]">My Mission in <span class="text-[#FFAD5A]">2022</span></h2>
+    <!-- =================== -->
+    <!-- Mission, Vision, Goal, Section Start -->
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="heading mt-[82px] mb-[48px] text-center">
+        <h2
+          class="font-poppins font-bold text-[32px] sm:text-[48px] leading-[40px] sm:leading-[70px] text-[#13103A]"
+        >
+          My Mission in <span class="text-[#FFAD5A]">2022</span>
+        </h2>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        <div class="max-w-[360px] mx-auto bg-[rgba(79,157,166,0.10)] rounded-[26px] pt-[25px] pl-[18px] lg:pl-[24px] mb-4 lg:mb-0 pb-[45px]">
-          <img class="w-[126px] mb-[19px]" src="./assets/images/illustrators/illustrator-1.png" alt="">
-          <h4 class="font-poppins font-semibold text-[24px] text-[#000] mb-[16px]">Mission</h4>
-          <p class="max-w-[315px] font-poppins font-normal text-[16px] text-[#424242]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[24px]">
+        <!-- Mission Card -->
+        <div
+          class="bg-[rgba(79,157,166,0.10)] rounded-[26px] pt-[25px] pl-[24px] pb-[45px]"
+        >
+          <img
+            class="w-[126px] mb-[19px] mx-auto"
+            src="./assets/images/illustrators/illustrator-1.png"
+            alt="Mission"
+          />
+          <h4
+            class="font-poppins font-semibold text-[20px] sm:text-[24px] text-[#000] mb-[16px] text-center"
+          >
+            Mission
+          </h4>
+          <p
+            class="font-poppins font-normal text-[14px] sm:text-[16px] text-[#424242] text-center"
+          >
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit.
+          </p>
         </div>
-        <div class="max-w-[360px] mx-auto bg-[rgba(255,89,89,0.10)] rounded-[26px] pt-[25px] pl-[18px] lg:pl-[24px] mb-4 lg:mb-0 pb-[45px]">
-          <img class="w-[126px] mb-[19px]" src="./assets/images/illustrators/illustrator-2.png" alt="">
-          <h4 class="font-poppins font-semibold text-[24px] text-[#000] mb-[16px]">Vission</h4>
-          <p class="max-w-[315px] font-poppins font-normal text-[16px] text-[#424242]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+        <!-- Vision Card -->
+        <div
+          class="bg-[rgba(255,89,89,0.10)] rounded-[26px] pt-[25px] pl-[24px] pb-[45px]"
+        >
+          <img
+            class="w-[126px] mb-[19px] mx-auto"
+            src="./assets/images/illustrators/illustrator-2.png"
+            alt="Vision"
+          />
+          <h4
+            class="font-poppins font-semibold text-[20px] sm:text-[24px] text-[#000] mb-[16px] text-center"
+          >
+            Vision
+          </h4>
+          <p
+            class="font-poppins font-normal text-[14px] sm:text-[16px] text-[#424242] text-center"
+          >
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit.
+          </p>
         </div>
-        <div class="max-w-[360px] mx-auto bg-[#FFF4D6] rounded-[26px] pt-[25px] pl-[18px] lg:pl-[24px] mb-4 lg:mb-0 pb-[45px] md:mt-6 lg:mt-0">
-          <img class="w-[126px] mb-[19px]" src="./assets/images/illustrators/illustrator-3.png" alt="">
-          <h4 class="font-poppins font-semibold text-[24px] text-[#000] mb-[16px]">Goals</h4>
-          <p class="max-w-[315px] font-poppins font-normal text-[16px] text-[#424242]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+        <!-- Goals Card -->
+        <div class="bg-[#FFF4D6] rounded-[26px] pt-[25px] pl-[24px] pb-[45px]">
+          <img
+            class="w-[126px] mb-[19px] mx-auto"
+            src="./assets/images/illustrators/illustrator-3.png"
+            alt="Goals"
+          />
+          <h4
+            class="font-poppins font-semibold text-[20px] sm:text-[24px] text-[#000] mb-[16px] text-center"
+          >
+            Goals
+          </h4>
+          <p
+            class="font-poppins font-normal text-[14px] sm:text-[16px] text-[#424242] text-center"
+          >
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit.
+          </p>
         </div>
       </div>
     </div>
-    <!-- My Mission In 2022 End -->
-    <!-- Develop Without Limits -->
-    <div class="container w-11/12 mx-auto grid grid-cols-12 mt-9 lg:mt-[86px] items-center">
-      <div class="order-2 col-span-12 lg:col-span-4 relative mt-10 lg:mt-0">
-        <img class="w-[400px] z-[1]" src="./assets/images/pictures/coding.png" alt="">
-        <img class="absolute top-[54px] -left-[94px] z-[-1] w-[227px]" src="./assets/images/shapes/shape-1.png" alt="">
-      </div>
-      <div class="order-1 col-span-12 lg:col-span-8 ml-0 lg:ml-[72px]">
-        <h2 class="font-poppins font-bold text-[36px] text-[#333333] max-w-[300px] mb-[17px]">Develop Without Limits</h2>
-        <p class="font-poppins font-normal text-[18px] leading-[30px] mb-[18px]">Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam falli deterruisset. No duo populo animal noluisse, enim deterruisset eos et. An mundi noster pri, ea eos quas expetendis scripserit, affert gubergren dissentias et cum.</p>
-        <button class="w-[243px] h-[48px] bg-[#FF5959] rounded-[5px] font-roboto font-medium text-[16px] leading-[20px] text-[#fff]">Read the  Documentation</button>
+    <!-- Mission, Vision, Goal, Section End -->
+    <!-- ====================================== -->
+    <!-- Develop Without Limits Start -->
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 items-center gap-8 mt-[86px]"
+      >
+        <!-- Image Section -->
+        <div class="relative flex justify-center sm:justify-start">
+          <img
+            class="w-[300px] sm:w-[400px] z-[1]"
+            src="./assets/images/pictures/coding.png"
+            alt="Coding"
+          />
+          <img
+            class="absolute top-[54px] -left-[94px] z-[-1] w-[180px] sm:w-[227px]"
+            src="./assets/images/shapes/shape-1.png"
+            alt="Shape"
+          />
+        </div>
+
+        <!-- Text Section -->
+        <div class="sm:ml-[72px] text-center sm:text-left">
+          <h2
+            class="font-poppins font-bold text-[32px] sm:text-[36px] text-[#333333] max-w-[300px] mb-[17px]"
+          >
+            Develop Without Limits
+          </h2>
+          <p
+            class="font-poppins font-normal text-[16px] sm:text-[18px] leading-[24px] sm:leading-[30px] mb-[18px]"
+          >
+            Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam
+            falli deterruisset. No duo populo animal noluisse, enim deterruisset
+            eos et. An mundi noster pri, ea eos quas expetendis scripserit,
+            affert gubergren dissentias et cum.
+          </p>
+          <button
+            class="w-[243px] h-[48px] bg-[#FF5959] rounded-[5px] font-roboto font-medium text-[16px] leading-[20px] text-[#fff]"
+          >
+            Read the Documentation
+          </button>
+        </div>
       </div>
     </div>
-    <!-- Develop Without Limits -->
-    <div class="container w-11/12 mx-auto grid grid-cols-12 mt-[105px] items-center relative">
-      <div class="col-span-7">
-        <h2 class="font-poppins font-bold text-[35px] lg:text-[36px] text-[#333333] max-w-[506px] mb-[18px]">Know our <span class="inline lg:block">Global Community</span></h2>
-        <p class="font-poppins font-normal text-[18px] leading-[30px] text-[#3E3E3E] max-w-[621px] mb-[18px]">Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam falli deterruisset. No duo populo animal noluisse, enim deterruisset eos et. An mundi noster pri, ea eos quas expetendis scripserit, affert gubergren dissentias et cum.</p>
-        <button class="w-[242px] h-[48px] bg-[#FF5959] rounded-[5px] font-robot font-medium text-[16px] leading-[20px] text-white">Read the  Documentation</button>
-      </div>
-      <div class="col-span-5 ml-auto">
-        <img class="w-[400px] z-[1]" src="./assets/images/pictures/project.png" alt="">
-        <img class="absolute -bottom-[74px] -right-[75px] z-[-1] w-[200px]" src="./assets/images/shapes/shape-1.png" alt="">
+    <!-- Develop Without Limits End -->
+    <!-- =============================== -->
+    <!-- Know our Global Community Section Start -->
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 w-full mt-[105px]">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 items-center relative"
+      >
+        <!-- Text Section -->
+        <div class="sm:col-start-1 sm:col-end-2 lg:col-start-1 lg:col-end-8">
+          <h2
+            class="font-poppins font-bold text-[28px] sm:text-[36px] text-[#333333] max-w-[506px] mb-[18px]"
+          >
+            Know our <span class="block">Global Community</span>
+          </h2>
+          <p
+            class="font-poppins font-normal text-[16px] sm:text-[18px] leading-[24px] sm:leading-[30px] text-[#3E3E3E] max-w-[621px] mb-[18px]"
+          >
+            Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam
+            falli deterruisset. No duo populo animal noluisse, enim deterruisset
+            eos et. An mundi noster pri, ea eos quas expetendis scripserit,
+            affert gubergren dissentias et cum.
+          </p>
+          <button
+            class="w-[242px] h-[48px] bg-[#FF5959] rounded-[5px] font-robot font-medium text-[16px] leading-[20px] text-white"
+          >
+            Read the Documentation
+          </button>
+        </div>
+        <!-- Image Section -->
+        <div
+          class="sm:col-start-2 sm:col-end-3 lg:col-start-9 lg:col-end-12 ml-auto relative"
+        >
+          <img
+            class="w-[300px] sm:w-[400px] z-[1]"
+            src="./assets/images/pictures/coding.png"
+            alt="Coding"
+          />
+          <img
+            class="absolute -bottom-[60px] sm:-bottom-[70px] right-[10px] z-[-1] w-[180px] sm:w-[200px]"
+            src="./assets/images/shapes/shape-1.png"
+            alt="Shape"
+          />
+        </div>
       </div>
     </div>
-    <div class="container mx-auto w-11/12 mt-[84px] mb-[85px]">
-      <h2 class="font-poppins font-bold text-[48px] leading-[74px] text-center text-[#000000]">Build <span class="text-[#FFAD5A]">Corona Application</span></h2>
+    <!-- Know our Global Community Section End -->
+    <!-- ========================================= -->
+    <!-- Stay safe with GoCorona. Section Start -->
+    <div
+      class="container mx-auto px-4 sm:px-6 lg:px-8 w-full mt-[84px] mb-[85px]"
+    >
+      <h2
+        class="font-poppins font-bold text-[32px] sm:text-[48px] text-center text-[#000000]"
+      >
+        Build <span class="text-[#FFAD5A]">Corona Application</span>
+      </h2>
     </div>
-    <div class="container w-11/12 mx-auto grid grid-cols-12 items-center">
-      <div class="col-start-2 col-end-5 relative">
-        <img class="w-[500px]" src="./assets/images/pictures/app-1.png" alt="">
+
+    <div
+      class="container mx-auto px-4 sm:px-6 lg:px-8 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 items-center"
+    >
+      <!-- Image Section -->
+      <div
+        class="relative sm:col-start-1 sm:col-end-2 lg:col-start-2 lg:col-end-5"
+      >
+        <img
+          class="w-full sm:w-[500px]"
+          src="./assets/images/pictures/app-1.png"
+          alt="App Image"
+        />
       </div>
-      <div class="col-start-7 col-end-13">
-        <h2 class="font-poppins font-bold text-[48px] text-[#000] leading-[131%] mb-[16px]">Stay safe with Go<span class="text-[#FFAD5A]">Corona.</span></h2>
-        <p class="font-poppind font-normal text-[18px] leading-[30px] w-[475px] text-[#3E3E3E] mb-[16px]">Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam falli deterruisset. No duo populo animal noluisse, enim deterruisset eos et. An mundi noster pri, ea eos quas expetendis scripserit, affert gubergren dissentias et cum.</p>
-        <button class="w-[157px] h-[48px] bg-[#FF5959] rounded-[5px] font-robot font-medium text-[16px] leading-[20px] text-white">App Fetures</button>
+
+      <!-- Text Section -->
+      <div
+        class="sm:col-start-1 sm:col-end-2 lg:col-start-7 lg:col-end-13 mt-6 sm:mt-0"
+      >
+        <h2
+          class="font-poppins font-bold text-[32px] sm:text-[48px] text-[#000] leading-[131%] mb-[16px]"
+        >
+          Stay safe with Go<span class="text-[#FFAD5A]">Corona.</span>
+        </h2>
+        <p
+          class="font-poppins font-normal text-[16px] sm:text-[18px] leading-[24px] sm:leading-[30px] text-[#3E3E3E] w-full sm:w-[475px] mb-[16px]"
+        >
+          Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam
+          falli deterruisset. No duo populo animal noluisse, enim deterruisset
+          eos et. An mundi noster pri, ea eos quas expetendis scripserit, affert
+          gubergren dissentias et cum.
+        </p>
+        <button
+          class="w-[157px] h-[48px] bg-[#FF5959] rounded-[5px] font-robot font-medium text-[16px] leading-[20px] text-white"
+        >
+          App Features
+        </button>
       </div>
     </div>
+    <!-- Stay safe with GoCorona. Section End -->
+    <!-- ======================================== -->
+    <!-- Footer Section Start -->
     <footer class="bg-[#0B0D17] pt-[39px] pb-[46px] mt-[70px]">
-      <div class="text-center">
-        <span class="font-lobster font-normal text-[36px] leading-[44px] text-white mb-[24px] inline-block">Mission <span class="text-[#FF5959]">2022</span></span>
-        <p class="font-manrope font-normal text-[16px] leading-[24px] text-[#D9DBE1]">Hard work, Perseverance, and Determination for 2022</p>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <span
+          class="font-lobster font-normal text-[28px] sm:text-[36px] leading-[44px] text-white mb-[24px] inline-block"
+        >
+          Mission <span class="text-[#FF5959]">2022</span>
+        </span>
+        <p
+          class="font-manrope font-normal text-[14px] sm:text-[16px] leading-[24px] text-[#D9DBE1]"
+        >
+          Hard work, Perseverance, and Determination for 2022
+        </p>
       </div>
     </footer>
-</body>
+    <!-- Footer Section End -->
+  </body>
 </html>
